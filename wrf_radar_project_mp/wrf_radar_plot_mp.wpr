@@ -1,0 +1,35 @@
+#!wing
+#!version=5.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+proj.file-list = [loc('add_advanced_geometry.py'),
+                  loc('add_basic_geometry.py'),
+                  loc('aggregate_dbf.py'),
+                  loc('array_contour.py'),
+                  loc('contour_polygon_filling.py'),
+                  loc('filter_top.py'),
+                  loc('interpolate_track.py'),
+                  loc('interpolate_track_wrf_standalone.py'),
+                  loc('isabel_main.py'),
+                  loc('merge_csv.vbs'),
+                  loc('mp_start.py'),
+                  loc('README.md'),
+                  loc('shp2centerline.py'),
+                  loc('utils.py'),
+                  loc('wrfout_contour.py')]
+proj.file-type = 'shared'
+proj.launch-config = {loc('aggregate_dbf.py'): ('project',
+        (u'E:\\wrf3.6.1\\ARWH_TiedtkeCu_Morrison\\reflec_netcdf\\top_1',
+         '')),
+                      loc('filter_top.py'): ('project',
+        (u'E:\\wrf3.6.1\\ARWH_TiedtkeCu_Morrison\\reflec_netcdf',
+         '')),
+                      loc('isabel_main.py'): ('project',
+        (u'9',
+         '')),
+                      loc('mp_start.py'): ('project',
+        (u'2',
+         ''))}
+proj.main-file = loc('isabel_main.py')
