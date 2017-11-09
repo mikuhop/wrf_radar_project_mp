@@ -101,7 +101,7 @@ def generate_dispersiveness(polygon, levels, workspace="in_memory"):
                 solidity = total_areas / total_cvx_areas
                 # Connectivity
                 sareas = fareas.shape[0]
-                conn = 1 - ((sareas - 1) / (math.log10(total_areas) + sareas))
+                conn = 1 - ((sareas - 1) / ((total_areas / 9) ** 0.5 + sareas))
                 fragmentation += "%f," % (1 - solidity * conn)
             else:
                 fragmentation += ","

@@ -96,7 +96,7 @@ def run_wrf(case, skip_list, DISCARD_EXISTED):
                       levels=wrf_levels,
                       masks=None,
                       working_mode="wrf",
-                      stage2_datetime_format="refl_3km_%Y_%m_%d_%H_%M",
+                      stage2_datetime_format="refl_3_5km_%Y_%m_%d_%H_%M",
                       skip_list=skip_list,
                       discard=DISCARD_EXISTED)
 
